@@ -1,3 +1,5 @@
+APP IS UNDER DEVELOPMENT. Completion: 60%.
+
 # Links
 
 Live Site URL:
