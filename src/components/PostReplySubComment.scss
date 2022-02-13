@@ -1,0 +1,52 @@
+.add-reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+  textarea {
+    max-width: 100%;
+    width: 100%;
+    min-height: 80px;
+    margin-right: 16px;
+    border-radius: 10px;
+    border: 1px solid #4661e6;
+    background: #f7f8fd;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3a4374;
+    padding: 15px 24px;
+  }
+
+  button {
+    width: 117px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    background: #ad1fea;
+    color: #f2f4fe;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .add-reply {
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    textarea {
+      padding: 8px 12px;
+    }
+
+    button {
+      margin-top: 12px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../scss/variables';
+
+.sort {
+  display: flex;
+  font-family: 'Jost', sans-serif;
+
+  h2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    margin-right: 5px;
+  }
+
+  select {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    appearance: none;
+    width: 120px;
+    background-color: transparent;
+    color: $main-white;
+    border: none;
+    background-image: url('../assets/shared/icon-arrow-down-extra.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+
+    .option {
+      font-family: 'Jost', sans-serif;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .sort {
+    h2 {
+      margin-left: 24px;
+    }
+  }
+}

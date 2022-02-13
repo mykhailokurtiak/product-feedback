@@ -1,0 +1,25 @@
+@import '../scss/variables';
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    width: 689px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 375px;
+  }
+}

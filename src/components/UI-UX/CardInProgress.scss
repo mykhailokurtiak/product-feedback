@@ -1,0 +1,135 @@
+.box-roadmap {
+  max-width: 350px;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .category-type {
+    font-size: 16px;
+    font-weight: 400;
+    color: #647196;
+    display: flex;
+    margin-bottom: 8px;
+    margin-left: 24px;
+
+    span {
+      display: block;
+      width: 8px;
+      height: 8px;
+      margin: auto 0;
+      margin-right: 16px;
+      border-radius: 50%;
+    }
+  }
+
+  &-planned {
+    border-top: 6px solid #f49f85;
+
+    span {
+      background-color: #f49f85;
+    }
+  }
+
+  &-inprogress {
+    border-top: 6px solid #ad1fea;
+
+    span {
+      background-color: #ad1fea;
+    }
+  }
+
+  &-live {
+    border-top: 6px solid #62bcfa;
+
+    span {
+      background-color: #62bcfa;
+    }
+  }
+
+  .suggestion-box {
+    margin-left: 24px;
+    margin-bottom: 16px;
+
+    .title:hover {
+      cursor: pointer;
+      color: #4661e6;
+    }
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .upvotes {
+      width: 69px;
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 10px;
+        margin-right: 5px;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    .comments {
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .box-roadmap {
+    max-width: 223px;
+    height: 251px;
+    // padding: 20px 20px;
+    justify-content: flex-start;
+
+    .category-type {
+      font-size: 13px;
+      margin-bottom: 16px;
+      margin-top: 24px;
+    }
+
+    .suggestion-box {
+      .title {
+        font-size: 13px;
+      }
+
+      .description {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .container {
+      .upvotes {
+        height: 32px;
+        margin-left: 24px;
+      }
+      .comments {
+        font-size: 13px;
+        right: 24px;
+        bottom: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .box-roadmap {
+    max-width: 327px;
+    height: 233px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+}

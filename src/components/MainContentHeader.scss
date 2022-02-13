@@ -1,0 +1,80 @@
+@import '../scss/variables';
+
+.main-header {
+  height: 72px;
+  background-color: #373f68;
+  color: #f2f4fe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+
+  .icon-logo {
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+
+  h1 {
+    font-size: 18px;
+    color: $main-white;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin-right: 24px;
+  }
+
+  .btn-add {
+    display: block;
+    align-items: center;
+    width: 158px;
+    height: 44px;
+    background-color: #ad1fea;
+    margin-right: 16px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: $main-white;
+    position: absolute;
+    right: 0;
+
+    &-link {
+      color: $main-white;
+      text-decoration: none;
+      padding: 20px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .main-header {
+    height: 56px;
+    width: 375px;
+    border-radius: 0;
+    padding: 0;
+
+    .icon-logo {
+      display: none;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    .btn-add {
+      width: 134px;
+      height: 40px;
+      right: 0px;
+      font-size: 13px;
+
+      &-link {
+        padding: 14px;
+      }
+    }
+  }
+}

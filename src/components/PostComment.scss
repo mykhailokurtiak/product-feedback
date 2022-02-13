@@ -1,0 +1,96 @@
+@import '../scss/variables';
+
+.add-comment {
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 24px 32px;
+  background: $main-white;
+  position: relative;
+
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3a4374;
+    margin-bottom: 24px;
+  }
+
+  textarea {
+    width: 100%s;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background: #f7f8fd;
+    margin-bottom: 28px;
+    padding: 16px 24px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3a4374;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #647196;
+    margin-bottom: 16px;
+  }
+
+  button {
+    width: 142px;
+    height: 44px;
+    border: none;
+    background: #ad1fea;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .add-comment {
+    max-width: 327px;
+    padding: 24px;
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    textarea {
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    h2 {
+      font-size: 13px;
+      margin-bottom: 0px;
+    }
+
+    button {
+      width: 119px;
+      height: 40px;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      bottom: 16px;
+      right: 24px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        opacity: 0.9;
+      }
+    }
+  }
+}

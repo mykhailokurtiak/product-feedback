@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+$colorBlack: rgb(26, 25, 25);
+$colorMain: rgb(151, 63, 30);
+$colorSecondary: rgb(99, 5, 187);
+$colorGrey: rgb(222, 222, 222);
+$bg-main: #f2f2f2;
+$main-white: #ffffff;
+$main-color: #ad1fea;
+$blue-color: #4661e6;
+$blue-light: #f2f4ff;
+$text-grey: #647196;
+
+%dot-shared {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 16px;
+}

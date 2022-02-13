@@ -1,0 +1,26 @@
+@import './variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: $bg-main;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // max-width: 1100px;
+  // margin: auto;
+  color: $colorBlack;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

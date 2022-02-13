@@ -1,0 +1,64 @@
+@import '../scss/variables';
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-height: 166px;
+  padding: 24px;
+  background-color: $main-white;
+  margin-bottom: 24px;
+  border-radius: 10px;
+
+  .btn-feature {
+    background-color: #f2f4ff;
+    border: none;
+    height: 30px;
+    padding: 0px 15px;
+    color: $blue-color;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    margin-right: 8px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .active {
+    color: $main-white;
+    background-color: #4661e6;
+  }
+}
+
+@media (max-width: 1000px) {
+  .features {
+    max-width: 181px;
+    max-height: 178px;
+    padding: 0 18px 0 18px;
+    align-items: center;
+    margin-bottom: 0;
+
+    .btn-feature {
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .features {
+    margin-top: 24px;
+    height: 178px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+  }
+}

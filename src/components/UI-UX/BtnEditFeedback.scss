@@ -1,0 +1,24 @@
+.edit-feedback {
+  border-radius: 10px;
+  background: #4661e6;
+  width: 142px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn-edit {
+    color: #f2f4fe;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500) {
+  .edit-feedback {
+    width: 119px;
+    height: 40px;
+  }
+}
